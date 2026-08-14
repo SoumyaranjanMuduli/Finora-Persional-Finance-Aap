@@ -279,8 +279,9 @@
       // Greet the user immediately so the header never sits on the static
       // "Hello 👋" placeholder, even if something below fails.
       const firstName = profile.full_name?.trim().split(/\s+/)[0] || 'there';
+      const displayName = firstName.length > 7 ? `${firstName.slice(0, 7)}…` : firstName;
       const helloEl = MFP.$('#hello-name');
-      if (helloEl) helloEl.textContent = `Hello, ${firstName} 👋`;
+      if (helloEl) helloEl.textContent = `Hello, ${displayName} 👋`;
 
       // These generate this month's salary / recurring-expense rows. They're
       // "nice to have" side effects of visiting the dashboard, not required

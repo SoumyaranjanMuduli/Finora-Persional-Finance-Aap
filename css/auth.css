@@ -24,3 +24,6 @@
 .splash h1{font-size:48px}
 .splash p{font-size:20px;color:var(--muted);margin-top:8px}
 .splash small{display:block;margin-top:28px;color:var(--muted)}
+.splash-tagline{font-family:'Fraunces',serif;font-style:italic;font-weight:500;font-size:22px;line-height:1.45;margin-top:22px;color:var(--text);letter-spacing:.01em}
+.splash-tagline em{font-style:italic;background:linear-gradient(150deg,var(--primary-bright),var(--primary2));-webkit-background-clip:text;background-clip:text;color:transparent}
+@media(max-width:680px){.splash-tagline{font-size:18px;margin-top:18px}}
