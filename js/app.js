@@ -279,7 +279,7 @@
       // Greet the user immediately so the header never sits on the static
       // "Hello 👋" placeholder, even if something below fails.
       const firstName = profile.full_name?.trim().split(/\s+/)[0] || 'there';
-      const displayName = firstName.length > 7 ? `${firstName.slice(0, 7)}…` : firstName;
+      const displayName = firstName.length > 6 ? `${firstName.slice(0, 6)}…` : firstName;
       const helloEl = MFP.$('#hello-name');
       if (helloEl) helloEl.textContent = `Hello, ${displayName} 👋`;
 

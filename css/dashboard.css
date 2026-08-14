@@ -2,7 +2,7 @@
 .hero-greeting{display:flex;align-items:center;justify-content:space-between;gap:16px}
 .topbar .actions{display:flex;align-items:center;gap:10px}
 .topbar .actions .avatar{width:44px;height:44px;flex:0 0 44px;font-size:15px;box-sizing:border-box}
-.topbar .actions .icon-btn{flex:0 0 44px}.hello h1{font-size:28px}.hello p{color:var(--muted);margin-top:4px}
+.topbar .actions .icon-btn{flex:0 0 44px}.hello h1{font-size:24px}.hello p{color:var(--muted);margin-top:4px}
 .stat-grid{margin-top:16px}
 .stat-green{background:var(--income-bg)}.stat-red{background:var(--expense-bg)}.stat-blue{background:var(--balance-bg)}.stat-purple{background:var(--savings-bg)}
 .stat-card{border:0;box-shadow:var(--shadow-clay)}
