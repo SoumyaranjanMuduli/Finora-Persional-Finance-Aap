@@ -1,0 +1,40 @@
+.home-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:16px}.home-main{min-width:0}.home-side{min-width:0}
+.hero-greeting{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.topbar .actions{display:flex;align-items:center;gap:10px}
+.topbar .actions .avatar{width:44px;height:44px;flex:0 0 44px;font-size:15px;box-sizing:border-box}
+.topbar .actions .icon-btn{flex:0 0 44px}.hello h1{font-size:28px}.hello p{color:var(--muted);margin-top:4px}
+.stat-grid{margin-top:16px}
+.stat-green{background:var(--income-bg)}.stat-red{background:var(--expense-bg)}.stat-blue{background:var(--balance-bg)}.stat-purple{background:var(--savings-bg)}
+.stat-card{border:0;box-shadow:var(--shadow-clay)}
+.stat-green .stat-icon{background:var(--green);color:#fff}.stat-red .stat-icon{background:var(--danger);color:#fff}.stat-blue .stat-icon{background:var(--blue);color:#fff}.stat-purple .stat-icon{background:var(--purple);color:#fff}
+.stat-card .stat-icon{width:40px;height:40px;border-radius:15px}
+.stat-card .value,.stat-card .label{color:var(--text)}
+
+/* ---------- Hero card — claymorphic inflated pastel banner ---------- */
+.hero-card{
+  margin-top:18px;border-radius:32px;padding:24px 24px 22px;position:relative;overflow:hidden;
+  background:linear-gradient(150deg,var(--clay-peach),var(--clay-mint));
+  box-shadow:var(--shadow-clay);
+}
+:root[data-theme=dark] .hero-card{
+  background:linear-gradient(150deg,var(--clay-lilac),var(--clay-blue));
+}
+.hero-card:after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.6;
+  background:radial-gradient(120% 90% at 100% 0%,rgba(255,255,255,.4),transparent 55%)}
+:root[data-theme=dark] .hero-card:after{background:radial-gradient(120% 90% at 100% 0%,rgba(255,255,255,.06),transparent 55%)}
+.hero-top{display:flex;gap:16px;position:relative;z-index:1;align-items:flex-start}
+.hero-copy h2{font-size:19px;font-weight:800;line-height:1.3}
+.hero-copy p{margin-top:6px;font-size:13px;line-height:1.5;color:var(--muted)}
+.hero-bottom{display:flex;align-items:center;justify-content:flex-start;margin-top:18px;position:relative;z-index:1;gap:12px}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(150deg,var(--primary-bright),var(--primary2));color:#fff;font-weight:700;
+  font-size:13.5px;padding:14px 20px;border-radius:18px;box-shadow:0 12px 26px color-mix(in srgb, var(--primary) 42%, transparent),inset 0 1px 0 rgba(255,255,255,.35);
+  transition:transform .15s ease,box-shadow .2s ease}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-primary:active{transform:translateY(0) scale(.98)}
+.btn-primary svg{width:16px;height:16px}
+@media(max-width:520px){.hero-copy h2{font-size:17px}}
+
+
+/* Claymorphic stat cards — soft inflated pastel, bevel highlight built into --shadow-clay */
+.stat-card{position:relative}
+.stat-card .stat-icon,.stat-card .label,.stat-card .value,.stat-card .sub{position:relative;z-index:1}

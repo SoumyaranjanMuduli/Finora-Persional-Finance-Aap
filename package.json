@@ -1,0 +1,26 @@
+{
+  "name": "my-finance-pro",
+  "version": "1.1.2",
+  "private": true,
+  "description": "Production personal finance app using vanilla JS, Supabase and Vercel.",
+  "scripts": {
+    "check:env": "node scripts/check-env.js",
+    "typecheck": "node scripts/typecheck.js",
+    "check:ui": "node scripts/ui-check.js",
+    "check:security": "node scripts/security-check.js",
+    "check:sri": "node scripts/sri-check.js",
+    "test": "node scripts/test.js",
+    "check:all": "npm run check:env && npm run check:config && npm run typecheck && npm run check:ui && npm run check:security && npm run generate:sri && npm run check:sri && npm run check:reference && npm run test && npm run test:security",
+    "build": "node scripts/build.js",
+    "dev": "node scripts/dev.js",
+    "check:reference": "node scripts/reference-check.js",
+    "generate:sri": "node scripts/generate-sri.js",
+    "check:config": "node scripts/config-check.js",
+    "test:security": "node scripts/security-regression-test.js",
+    "setup": "npm install && npm run generate:sri && npm run check:all",
+    "test:e2e:live": "node scripts/e2e-live.js"
+  },
+  "engines": {
+    "node": "22.x"
+  }
+}

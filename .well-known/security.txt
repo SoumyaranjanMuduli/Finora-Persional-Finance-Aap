@@ -1,0 +1,5 @@
+# Configure Contact and Canonical for your real production domain before launch.
+Contact: mailto:security@finora.app
+Expires: 2027-08-13T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://finora.app/.well-known/security.txt

@@ -1,0 +1,54 @@
+/* Utility classes — replace one-off inline `style=""` attributes so
+   the site can run without `unsafe-inline` in the style-src CSP directive. */
+
+.u-text-danger { color: var(--danger); }
+.u-cursor-pointer { cursor: pointer; }
+.u-block { display: block; }
+.u-flex-center-12 { display: flex; align-items: center; gap: 12px; }
+.u-flex-check-center { display: flex; gap: 9px; align-items: center; color: var(--muted); }
+.u-flex-check-start { display: flex; gap: 9px; align-items: flex-start; color: var(--muted); }
+.u-flex-between-10 { display: flex; justify-content: space-between; gap: 10px; }
+.u-hidden-mb16 { display: none; margin-bottom: 16px; }
+.u-hidden-mb18 { display: none; margin-bottom: 18px; }
+.u-fs-12 { font-size: 12px; }
+.u-fs-15 { font-size: 15px; }
+.u-fs-16 { font-size: 16px; }
+.u-fs-18-mt5 { font-size: 18px; margin-top: 5px; }
+.u-fs-28-bold { font-size: 28px; font-weight: 800; }
+.u-fs-38 { font-size: 38px; }
+.u-col-span { grid-column: 1/-1; }
+.u-skeleton-line { height: 18px; width: 230px; }
+.u-skeleton-avatar { height: 45px; width: 45px; }
+.u-mb-16 { margin-bottom: 16px; }
+.u-mb-20-center { margin-bottom: 20px; text-align: center; }
+.u-mb-22 { margin-bottom: 22px; }
+.u-mt-4 { margin-top: 4px; }
+.u-mt-5 { margin-top: 5px; }
+.u-mt-8 { margin-top: 8px; }
+.u-mt-12 { margin-top: 12px; }
+.u-mt-14 { margin-top: 14px; }
+.u-mt-15 { margin-top: 15px; }
+.u-mt-16 { margin-top: 16px; }
+.u-mt-18 { margin-top: 18px; }
+.u-mt-22-fs-18 { margin-top: 22px; font-size: 18px; }
+.u-mt-30 { margin-top: 30px; }
+.u-m-0-0-12 { margin: 0 0 12px; }
+.u-m-20-0-10 { margin: 20px 0 10px; }
+.u-m-24-0-10 { margin: 24px 0 10px; }
+.u-maxw-320 { max-width: 320px; }
+.u-minh-50-p4 { min-height: 50px; padding: 4px; }
+.u-disabled-look { opacity: .7; cursor: not-allowed; }
+.u-p-12 { padding: 12px; }
+.u-p-14-flat { padding: 14px; box-shadow: none; background: var(--surface2); }
+.u-hidden-card-primary { padding: 16px; margin-bottom: 16px; display: none; border-color: var(--primary); }
+.u-p-18 { padding: 18px; }
+.u-p-18-mb-16 { padding: 18px; margin-bottom: 16px; }
+.u-p-20 { padding: 20px; }
+.u-p-20-maxw-720 { padding: 20px; max-width: 720px; }
+.u-p-20-maxw-720-danger { padding: 20px; max-width: 720px; border-color: #ff4b55; }
+.u-legal-content { padding: 24px; max-width: 760px; line-height: 1.7; }
+.u-sr-only { position: absolute; left: -9999px; }
+.u-chart-220 { position: relative; height: 220px; }
+.u-chart-220-mt-16 { position: relative; height: 220px; margin-top: 16px; }
+.u-chart-280 { position: relative; height: 280px; }
+.u-center-mb-22 { text-align: center; margin-bottom: 22px; }

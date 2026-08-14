@@ -1,0 +1,8 @@
+.report-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.report-grid .wide{grid-column:1/-1}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.compare-box{padding:16px;background:var(--bg);border-radius:20px;border:0;box-shadow:var(--shadow-sm)}
+.compare-box .value{font-size:25px;font-weight:800;margin-top:5px}
+.delta-up{color:var(--danger)}.delta-down{color:var(--green)}
+.reports-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.chart-section{display:flex;flex-direction:column}.chart-section .chart-card{flex:1}.chart-section .chart-card canvas{max-height:300px}
+@media(max-width:768px){.reports-grid{grid-template-columns:1fr}}
